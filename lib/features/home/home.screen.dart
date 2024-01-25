@@ -1,6 +1,7 @@
 import 'package:app/core/const.dart';
 import 'package:app/core/extension.dart';
 import 'package:app/core/fonts.dart';
+import 'package:app/features/quran/quran.screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran/quran.dart' as quran;
@@ -8,6 +9,7 @@ import 'package:quran/quran.dart' as quran;
 import 'widgets/features.card.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String routeName = '/home';
   const HomeScreen({super.key});
 
   @override
@@ -78,6 +80,7 @@ class HomeScreen extends StatelessWidget {
                       title: 'home:memorize-review-quran',
                       backgroundImage:
                           'assets/images/home/memorize-review-quran.png',
+                      routeName: QuranScreen.routeName,
                     ),
                     FeaturesCard(
                       width: context.width / 2 - kSpacingX3,

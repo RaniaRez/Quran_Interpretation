@@ -26,6 +26,7 @@ class ProgressHifdh with _$ProgressHifdh {
   const factory ProgressHifdh({
     @JsonKey(name: 'surah') required int surah,
     @JsonKey(name: 'verse') required int verse,
+    @JsonKey(name: 'progress') required num progress,
   }) = _ProgressHifdh;
 
   factory ProgressHifdh.fromJson(Map<String, dynamic> json) =>
@@ -37,6 +38,7 @@ class ProgressRepetition with _$ProgressRepetition {
   const factory ProgressRepetition({
     @JsonKey(name: 'surah') required int surah,
     @JsonKey(name: 'verse') required int verse,
+    @JsonKey(name: 'progress') required num progress,
   }) = _ProgressRepetition;
 
   factory ProgressRepetition.fromJson(Map<String, dynamic> json) =>
@@ -48,6 +50,7 @@ class ProgressTalqeen with _$ProgressTalqeen {
   const factory ProgressTalqeen({
     @JsonKey(name: 'surah') required int surah,
     @JsonKey(name: 'verse') required int verse,
+    @JsonKey(name: 'progress') required num progress,
   }) = _ProgressTalqeen;
 
   factory ProgressTalqeen.fromJson(Map<String, dynamic> json) =>

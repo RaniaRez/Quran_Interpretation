@@ -14,11 +14,13 @@ class CustomButton extends StatelessWidget {
     required this.height,
     this.icon,
     this.disabled = false,
+    this.width,
   });
   final String text;
   final IconData? icon;
   final Color textColor;
   final double height;
+  final double? width;
   final void Function()? onPressed;
   final Color? backgroundColor;
   final bool disabled;
@@ -38,7 +40,7 @@ class CustomButton extends StatelessWidget {
             ? MaterialStateProperty.all(kGray)
             : MaterialStateProperty.all(backgroundColor),
         minimumSize:
-            MaterialStateProperty.all(Size(double.infinity, height.sp)),
+            MaterialStateProperty.all(Size(width ?? context.width, height.sp)),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(kSpacingX1),

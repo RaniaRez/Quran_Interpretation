@@ -40,12 +40,14 @@ _$ProgressHifdhImpl _$$ProgressHifdhImplFromJson(Map<String, dynamic> json) =>
     _$ProgressHifdhImpl(
       surah: json['surah'] as int,
       verse: json['verse'] as int,
+      progress: json['progress'] as num,
     );
 
 Map<String, dynamic> _$$ProgressHifdhImplToJson(_$ProgressHifdhImpl instance) =>
     <String, dynamic>{
       'surah': instance.surah,
       'verse': instance.verse,
+      'progress': instance.progress,
     };
 
 _$ProgressRepetitionImpl _$$ProgressRepetitionImplFromJson(
@@ -53,6 +55,7 @@ _$ProgressRepetitionImpl _$$ProgressRepetitionImplFromJson(
     _$ProgressRepetitionImpl(
       surah: json['surah'] as int,
       verse: json['verse'] as int,
+      progress: json['progress'] as num,
     );
 
 Map<String, dynamic> _$$ProgressRepetitionImplToJson(
@@ -60,6 +63,7 @@ Map<String, dynamic> _$$ProgressRepetitionImplToJson(
     <String, dynamic>{
       'surah': instance.surah,
       'verse': instance.verse,
+      'progress': instance.progress,
     };
 
 _$ProgressTalqeenImpl _$$ProgressTalqeenImplFromJson(
@@ -67,6 +71,7 @@ _$ProgressTalqeenImpl _$$ProgressTalqeenImplFromJson(
     _$ProgressTalqeenImpl(
       surah: json['surah'] as int,
       verse: json['verse'] as int,
+      progress: json['progress'] as num,
     );
 
 Map<String, dynamic> _$$ProgressTalqeenImplToJson(
@@ -74,4 +79,5 @@ Map<String, dynamic> _$$ProgressTalqeenImplToJson(
     <String, dynamic>{
       'surah': instance.surah,
       'verse': instance.verse,
+      'progress': instance.progress,
     };

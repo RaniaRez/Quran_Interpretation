@@ -136,9 +136,9 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     email: "rani@gmail.com",
     avatar: AvatarTypes.first.path,
     type: UserTypes.student.value,
-    hifdh: const ProgressHifdh(surah: 7, verse: 4),
-    repetition: const ProgressRepetition(surah: 10, verse: 90),
-    talqueen: const ProgressTalqeen(surah: 7, verse: 20),
+    hifdh: const ProgressHifdh(surah: 7, verse: 4, progress: 0.5),
+    repetition: const ProgressRepetition(surah: 10, verse: 90, progress: 0.3),
+    talqueen: const ProgressTalqeen(surah: 7, verse: 20, progress: 0.55),
   );
 
   User get user => _user;

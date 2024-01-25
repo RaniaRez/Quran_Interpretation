@@ -19,7 +19,7 @@ class IslamicScaffold extends StatelessWidget {
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
           backgroundColor: surfaceBrand,
-          appBar: appBar,
+          appBar: appBar ?? const CustomAppBar(),
           bottomNavigationBar: bottomNavigationBar,
           extendBodyBehindAppBar: true,
           body: SizedBox(

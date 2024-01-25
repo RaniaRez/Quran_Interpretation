@@ -13,7 +13,6 @@ import 'core/localizations.dart';
 import 'core/routes.dart';
 import 'core/theme.dart';
 import 'features/auth/bloc/login/login_bloc.dart';
-import 'features/auth/login.screen.dart';
 import 'features/navigation/cubit/navigation_cubit.dart';
 import 'features/navigation/navigation.screen.dart';
 import 'logic/auth/auth_bloc.dart';

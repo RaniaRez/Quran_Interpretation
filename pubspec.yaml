@@ -104,6 +104,7 @@ flutter:
     - assets/images/avatars/
     - assets/images/background/
     - assets/images/home/
+    - assets/images/quran/
     - assets/icons/
     - lang/
   #   - images/a_dot_ham.jpeg

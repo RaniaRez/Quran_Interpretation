@@ -17,7 +17,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       leading: (canPop)
           ? IconButton(
-              icon: const Icon(LucideIcons.arrowLeft),
+              icon: const Icon(LucideIcons.cornerUpLeft),
               onPressed: () => context.pop(),
             )
           : null,

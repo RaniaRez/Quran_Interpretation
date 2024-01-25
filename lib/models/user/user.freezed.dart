@@ -374,6 +374,8 @@ mixin _$ProgressHifdh {
   int get surah => throw _privateConstructorUsedError;
   @JsonKey(name: 'verse')
   int get verse => throw _privateConstructorUsedError;
+  @JsonKey(name: 'progress')
+  num get progress => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -388,7 +390,9 @@ abstract class $ProgressHifdhCopyWith<$Res> {
       _$ProgressHifdhCopyWithImpl<$Res, ProgressHifdh>;
   @useResult
   $Res call(
-      {@JsonKey(name: 'surah') int surah, @JsonKey(name: 'verse') int verse});
+      {@JsonKey(name: 'surah') int surah,
+      @JsonKey(name: 'verse') int verse,
+      @JsonKey(name: 'progress') num progress});
 }
 
 /// @nodoc
@@ -406,6 +410,7 @@ class _$ProgressHifdhCopyWithImpl<$Res, $Val extends ProgressHifdh>
   $Res call({
     Object? surah = null,
     Object? verse = null,
+    Object? progress = null,
   }) {
     return _then(_value.copyWith(
       surah: null == surah
@@ -416,6 +421,10 @@ class _$ProgressHifdhCopyWithImpl<$Res, $Val extends ProgressHifdh>
           ? _value.verse
           : verse // ignore: cast_nullable_to_non_nullable
               as int,
+      progress: null == progress
+          ? _value.progress
+          : progress // ignore: cast_nullable_to_non_nullable
+              as num,
     ) as $Val);
   }
 }
@@ -429,7 +438,9 @@ abstract class _$$ProgressHifdhImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {@JsonKey(name: 'surah') int surah, @JsonKey(name: 'verse') int verse});
+      {@JsonKey(name: 'surah') int surah,
+      @JsonKey(name: 'verse') int verse,
+      @JsonKey(name: 'progress') num progress});
 }
 
 /// @nodoc
@@ -445,6 +456,7 @@ class __$$ProgressHifdhImplCopyWithImpl<$Res>
   $Res call({
     Object? surah = null,
     Object? verse = null,
+    Object? progress = null,
   }) {
     return _then(_$ProgressHifdhImpl(
       surah: null == surah
@@ -455,6 +467,10 @@ class __$$ProgressHifdhImplCopyWithImpl<$Res>
           ? _value.verse
           : verse // ignore: cast_nullable_to_non_nullable
               as int,
+      progress: null == progress
+          ? _value.progress
+          : progress // ignore: cast_nullable_to_non_nullable
+              as num,
     ));
   }
 }
@@ -464,7 +480,8 @@ class __$$ProgressHifdhImplCopyWithImpl<$Res>
 class _$ProgressHifdhImpl implements _ProgressHifdh {
   const _$ProgressHifdhImpl(
       {@JsonKey(name: 'surah') required this.surah,
-      @JsonKey(name: 'verse') required this.verse});
+      @JsonKey(name: 'verse') required this.verse,
+      @JsonKey(name: 'progress') required this.progress});
 
   factory _$ProgressHifdhImpl.fromJson(Map<String, dynamic> json) =>
       _$$ProgressHifdhImplFromJson(json);
@@ -475,10 +492,13 @@ class _$ProgressHifdhImpl implements _ProgressHifdh {
   @override
   @JsonKey(name: 'verse')
   final int verse;
+  @override
+  @JsonKey(name: 'progress')
+  final num progress;
 
   @override
   String toString() {
-    return 'ProgressHifdh(surah: $surah, verse: $verse)';
+    return 'ProgressHifdh(surah: $surah, verse: $verse, progress: $progress)';
   }
 
   @override
@@ -487,12 +507,14 @@ class _$ProgressHifdhImpl implements _ProgressHifdh {
         (other.runtimeType == runtimeType &&
             other is _$ProgressHifdhImpl &&
             (identical(other.surah, surah) || other.surah == surah) &&
-            (identical(other.verse, verse) || other.verse == verse));
+            (identical(other.verse, verse) || other.verse == verse) &&
+            (identical(other.progress, progress) ||
+                other.progress == progress));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, surah, verse);
+  int get hashCode => Object.hash(runtimeType, surah, verse, progress);
 
   @JsonKey(ignore: true)
   @override
@@ -510,8 +532,10 @@ class _$ProgressHifdhImpl implements _ProgressHifdh {
 
 abstract class _ProgressHifdh implements ProgressHifdh {
   const factory _ProgressHifdh(
-      {@JsonKey(name: 'surah') required final int surah,
-      @JsonKey(name: 'verse') required final int verse}) = _$ProgressHifdhImpl;
+          {@JsonKey(name: 'surah') required final int surah,
+          @JsonKey(name: 'verse') required final int verse,
+          @JsonKey(name: 'progress') required final num progress}) =
+      _$ProgressHifdhImpl;
 
   factory _ProgressHifdh.fromJson(Map<String, dynamic> json) =
       _$ProgressHifdhImpl.fromJson;
@@ -522,6 +546,9 @@ abstract class _ProgressHifdh implements ProgressHifdh {
   @override
   @JsonKey(name: 'verse')
   int get verse;
+  @override
+  @JsonKey(name: 'progress')
+  num get progress;
   @override
   @JsonKey(ignore: true)
   _$$ProgressHifdhImplCopyWith<_$ProgressHifdhImpl> get copyWith =>
@@ -538,6 +565,8 @@ mixin _$ProgressRepetition {
   int get surah => throw _privateConstructorUsedError;
   @JsonKey(name: 'verse')
   int get verse => throw _privateConstructorUsedError;
+  @JsonKey(name: 'progress')
+  num get progress => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -552,7 +581,9 @@ abstract class $ProgressRepetitionCopyWith<$Res> {
       _$ProgressRepetitionCopyWithImpl<$Res, ProgressRepetition>;
   @useResult
   $Res call(
-      {@JsonKey(name: 'surah') int surah, @JsonKey(name: 'verse') int verse});
+      {@JsonKey(name: 'surah') int surah,
+      @JsonKey(name: 'verse') int verse,
+      @JsonKey(name: 'progress') num progress});
 }
 
 /// @nodoc
@@ -570,6 +601,7 @@ class _$ProgressRepetitionCopyWithImpl<$Res, $Val extends ProgressRepetition>
   $Res call({
     Object? surah = null,
     Object? verse = null,
+    Object? progress = null,
   }) {
     return _then(_value.copyWith(
       surah: null == surah
@@ -580,6 +612,10 @@ class _$ProgressRepetitionCopyWithImpl<$Res, $Val extends ProgressRepetition>
           ? _value.verse
           : verse // ignore: cast_nullable_to_non_nullable
               as int,
+      progress: null == progress
+          ? _value.progress
+          : progress // ignore: cast_nullable_to_non_nullable
+              as num,
     ) as $Val);
   }
 }
@@ -593,7 +629,9 @@ abstract class _$$ProgressRepetitionImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {@JsonKey(name: 'surah') int surah, @JsonKey(name: 'verse') int verse});
+      {@JsonKey(name: 'surah') int surah,
+      @JsonKey(name: 'verse') int verse,
+      @JsonKey(name: 'progress') num progress});
 }
 
 /// @nodoc
@@ -609,6 +647,7 @@ class __$$ProgressRepetitionImplCopyWithImpl<$Res>
   $Res call({
     Object? surah = null,
     Object? verse = null,
+    Object? progress = null,
   }) {
     return _then(_$ProgressRepetitionImpl(
       surah: null == surah
@@ -619,6 +658,10 @@ class __$$ProgressRepetitionImplCopyWithImpl<$Res>
           ? _value.verse
           : verse // ignore: cast_nullable_to_non_nullable
               as int,
+      progress: null == progress
+          ? _value.progress
+          : progress // ignore: cast_nullable_to_non_nullable
+              as num,
     ));
   }
 }
@@ -628,7 +671,8 @@ class __$$ProgressRepetitionImplCopyWithImpl<$Res>
 class _$ProgressRepetitionImpl implements _ProgressRepetition {
   const _$ProgressRepetitionImpl(
       {@JsonKey(name: 'surah') required this.surah,
-      @JsonKey(name: 'verse') required this.verse});
+      @JsonKey(name: 'verse') required this.verse,
+      @JsonKey(name: 'progress') required this.progress});
 
   factory _$ProgressRepetitionImpl.fromJson(Map<String, dynamic> json) =>
       _$$ProgressRepetitionImplFromJson(json);
@@ -639,10 +683,13 @@ class _$ProgressRepetitionImpl implements _ProgressRepetition {
   @override
   @JsonKey(name: 'verse')
   final int verse;
+  @override
+  @JsonKey(name: 'progress')
+  final num progress;
 
   @override
   String toString() {
-    return 'ProgressRepetition(surah: $surah, verse: $verse)';
+    return 'ProgressRepetition(surah: $surah, verse: $verse, progress: $progress)';
   }
 
   @override
@@ -651,12 +698,14 @@ class _$ProgressRepetitionImpl implements _ProgressRepetition {
         (other.runtimeType == runtimeType &&
             other is _$ProgressRepetitionImpl &&
             (identical(other.surah, surah) || other.surah == surah) &&
-            (identical(other.verse, verse) || other.verse == verse));
+            (identical(other.verse, verse) || other.verse == verse) &&
+            (identical(other.progress, progress) ||
+                other.progress == progress));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, surah, verse);
+  int get hashCode => Object.hash(runtimeType, surah, verse, progress);
 
   @JsonKey(ignore: true)
   @override
@@ -676,7 +725,8 @@ class _$ProgressRepetitionImpl implements _ProgressRepetition {
 abstract class _ProgressRepetition implements ProgressRepetition {
   const factory _ProgressRepetition(
           {@JsonKey(name: 'surah') required final int surah,
-          @JsonKey(name: 'verse') required final int verse}) =
+          @JsonKey(name: 'verse') required final int verse,
+          @JsonKey(name: 'progress') required final num progress}) =
       _$ProgressRepetitionImpl;
 
   factory _ProgressRepetition.fromJson(Map<String, dynamic> json) =
@@ -688,6 +738,9 @@ abstract class _ProgressRepetition implements ProgressRepetition {
   @override
   @JsonKey(name: 'verse')
   int get verse;
+  @override
+  @JsonKey(name: 'progress')
+  num get progress;
   @override
   @JsonKey(ignore: true)
   _$$ProgressRepetitionImplCopyWith<_$ProgressRepetitionImpl> get copyWith =>
@@ -704,6 +757,8 @@ mixin _$ProgressTalqeen {
   int get surah => throw _privateConstructorUsedError;
   @JsonKey(name: 'verse')
   int get verse => throw _privateConstructorUsedError;
+  @JsonKey(name: 'progress')
+  num get progress => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -718,7 +773,9 @@ abstract class $ProgressTalqeenCopyWith<$Res> {
       _$ProgressTalqeenCopyWithImpl<$Res, ProgressTalqeen>;
   @useResult
   $Res call(
-      {@JsonKey(name: 'surah') int surah, @JsonKey(name: 'verse') int verse});
+      {@JsonKey(name: 'surah') int surah,
+      @JsonKey(name: 'verse') int verse,
+      @JsonKey(name: 'progress') num progress});
 }
 
 /// @nodoc
@@ -736,6 +793,7 @@ class _$ProgressTalqeenCopyWithImpl<$Res, $Val extends ProgressTalqeen>
   $Res call({
     Object? surah = null,
     Object? verse = null,
+    Object? progress = null,
   }) {
     return _then(_value.copyWith(
       surah: null == surah
@@ -746,6 +804,10 @@ class _$ProgressTalqeenCopyWithImpl<$Res, $Val extends ProgressTalqeen>
           ? _value.verse
           : verse // ignore: cast_nullable_to_non_nullable
               as int,
+      progress: null == progress
+          ? _value.progress
+          : progress // ignore: cast_nullable_to_non_nullable
+              as num,
     ) as $Val);
   }
 }
@@ -759,7 +821,9 @@ abstract class _$$ProgressTalqeenImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {@JsonKey(name: 'surah') int surah, @JsonKey(name: 'verse') int verse});
+      {@JsonKey(name: 'surah') int surah,
+      @JsonKey(name: 'verse') int verse,
+      @JsonKey(name: 'progress') num progress});
 }
 
 /// @nodoc
@@ -775,6 +839,7 @@ class __$$ProgressTalqeenImplCopyWithImpl<$Res>
   $Res call({
     Object? surah = null,
     Object? verse = null,
+    Object? progress = null,
   }) {
     return _then(_$ProgressTalqeenImpl(
       surah: null == surah
@@ -785,6 +850,10 @@ class __$$ProgressTalqeenImplCopyWithImpl<$Res>
           ? _value.verse
           : verse // ignore: cast_nullable_to_non_nullable
               as int,
+      progress: null == progress
+          ? _value.progress
+          : progress // ignore: cast_nullable_to_non_nullable
+              as num,
     ));
   }
 }
@@ -794,7 +863,8 @@ class __$$ProgressTalqeenImplCopyWithImpl<$Res>
 class _$ProgressTalqeenImpl implements _ProgressTalqeen {
   const _$ProgressTalqeenImpl(
       {@JsonKey(name: 'surah') required this.surah,
-      @JsonKey(name: 'verse') required this.verse});
+      @JsonKey(name: 'verse') required this.verse,
+      @JsonKey(name: 'progress') required this.progress});
 
   factory _$ProgressTalqeenImpl.fromJson(Map<String, dynamic> json) =>
       _$$ProgressTalqeenImplFromJson(json);
@@ -805,10 +875,13 @@ class _$ProgressTalqeenImpl implements _ProgressTalqeen {
   @override
   @JsonKey(name: 'verse')
   final int verse;
+  @override
+  @JsonKey(name: 'progress')
+  final num progress;
 
   @override
   String toString() {
-    return 'ProgressTalqeen(surah: $surah, verse: $verse)';
+    return 'ProgressTalqeen(surah: $surah, verse: $verse, progress: $progress)';
   }
 
   @override
@@ -817,12 +890,14 @@ class _$ProgressTalqeenImpl implements _ProgressTalqeen {
         (other.runtimeType == runtimeType &&
             other is _$ProgressTalqeenImpl &&
             (identical(other.surah, surah) || other.surah == surah) &&
-            (identical(other.verse, verse) || other.verse == verse));
+            (identical(other.verse, verse) || other.verse == verse) &&
+            (identical(other.progress, progress) ||
+                other.progress == progress));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, surah, verse);
+  int get hashCode => Object.hash(runtimeType, surah, verse, progress);
 
   @JsonKey(ignore: true)
   @override
@@ -842,7 +917,8 @@ class _$ProgressTalqeenImpl implements _ProgressTalqeen {
 abstract class _ProgressTalqeen implements ProgressTalqeen {
   const factory _ProgressTalqeen(
           {@JsonKey(name: 'surah') required final int surah,
-          @JsonKey(name: 'verse') required final int verse}) =
+          @JsonKey(name: 'verse') required final int verse,
+          @JsonKey(name: 'progress') required final num progress}) =
       _$ProgressTalqeenImpl;
 
   factory _ProgressTalqeen.fromJson(Map<String, dynamic> json) =
@@ -854,6 +930,9 @@ abstract class _ProgressTalqeen implements ProgressTalqeen {
   @override
   @JsonKey(name: 'verse')
   int get verse;
+  @override
+  @JsonKey(name: 'progress')
+  num get progress;
   @override
   @JsonKey(ignore: true)
   _$$ProgressTalqeenImplCopyWith<_$ProgressTalqeenImpl> get copyWith =>
