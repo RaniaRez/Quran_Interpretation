@@ -1,0 +1,52 @@
+{
+    "general:cancel": "إلغاء",
+    "general:search-by-date": "البحث حسب التاريخ",
+    "general:search": "بحث",
+    "general:select-date-range": "حدد نطاق التاريخ",
+    "general:to": "إلى",
+    
+    "error": "خطأ",
+    "success": "نجاح",
+
+    "errors:no-internet-connection": "لا يوجد اتصال بالإنترنت",
+    "errors:check-your-connection": "تحقق من اتصالك",
+    "errors:something-went-wrong": "حدث خطأ ما",
+
+    "states:no-result": "لا يوجد نتيجة",
+
+    "back": "عودة",
+    "start": "بدء",
+    
+    "auth:login": "تسجيل الدخول",
+    "auth:signup": "التسجيل",
+    "auth:login-desc": "قم بالوصول إلى جميع ميزات التطبيق",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "auth:login-button": "تسجيل الدخول",
+    "auth:error:login-failed": "اسم المستخدم أو كلمة المرور غير صحيحة",
+    "INVALID_AUTHENTICATION_CREDENTIALS": "بيانات الاعتماد غير صالحة",
+    "auth:enter-username": "الرجاء إدخال اسم المستخدم / كلمة المرور",
+    "auth:enter-password": "الرجاء إدخال اسم المستخدم / كلمة المرور",
+    "auth:change-password-failed": "كلمة المرور القديمة غير صحيحة، يرجى المحاولة مرة أخرى",
+    "auth:login-signup": "تسجيل الدخول / الاشتراك",
+    "auth:login-no-account": "ليس لديك حساب؟",
+    "auth:signup:select_user_type": "من أنت",
+    "auth:signup:teacher": "معلم",
+    "auth:signup:student": "طالب",
+    "auth:signup:username": "اسم المستخدم",
+    "auth:signup:email": "البريد الإلكتروني",
+    "auth:signup:password": "كلمة المرور",
+    "auth:signup:confirm": "تأكيد كلمة المرور",
+    "auth:signup:username_error": "اسم المستخدم غير صالح",
+    "auth:signup:invalid.email": "البريد الإلكتروني غير صالح",
+    "auth:signup:password_error": "كلمة المرور غير صالحة",
+    "auth:signup:previous": "السابق",
+    "auth:signup:next": "التالي",
+    "auth:signup:select_avatar": "حدد الصورة الرمزية",
+
+    "layout:home": "الصفحة الرئيسية",
+    "layout:medicaments": "المنتجات",
+    "layout:orders": "الطلبات",
+    "layout:card": "السلة",
+    "layout:menu": "القائمة"
+}
