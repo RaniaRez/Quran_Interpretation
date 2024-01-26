@@ -93,5 +93,14 @@
     "surah:quiz": "Quiz",
     "surah:next": "Suivant",
 
-    "notification:mine": "Mes notifications"
+    "notification:mine": "Mes notifications",
+
+    "appointments:mine": "Mes rendez-vous",
+    "appointments:welcome": "Voici tous vos prochains rendez-vous auxquels vous devez participer.",
+    "appointments:create": "Créer rendez-vous",
+    "appointments:create-note": "Créez note",
+    "appointments:teacher.edit": "Modifier",
+    "appointments:teacher.delete": "Supprimer",
+    "appointments:student.confirm": "Confirmer",
+    "appointments:join": "Rejoindre"
 }

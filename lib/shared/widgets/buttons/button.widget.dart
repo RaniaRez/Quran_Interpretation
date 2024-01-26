@@ -65,11 +65,13 @@ class CustomButton extends StatelessWidget {
                 SizedBox(width: kSpacingX1)
               ],
             ),
-          Text(text.translate(context),
-              maxLines: 2,
-              textAlign: TextAlign.center,
-              style:
-                  context.textTheme.headlineMedium!.copyWith(color: textColor)),
+          Expanded(
+            child: Text(text.translate(context),
+                maxLines: 2,
+                textAlign: TextAlign.center,
+                style: context.textTheme.headlineMedium!
+                    .copyWith(color: textColor)),
+          ),
           if (suffixIcon != null)
             Row(
               mainAxisSize: MainAxisSize.min,

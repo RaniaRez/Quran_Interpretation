@@ -1,3 +1,4 @@
+import 'package:app/features/appointments/logic/bloc/appointments_bloc.dart';
 import 'package:app/features/auth/bloc/signup/signup_bloc.dart';
 import 'package:app/features/auth/signup.screen.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
@@ -79,6 +80,7 @@ class MyAppState extends State<MyApp> with TickerProviderStateMixin {
           BlocProvider<SurahLessonCubit>(
               create: (context) => SurahLessonCubit()),
           BlocProvider<RemindersBloc>(create: (context) => RemindersBloc()),
+          BlocProvider<AppointmentsBloc>(create: (context) => AppointmentsBloc()),
         ],
         child: ScreenUtilInit(
             designSize: const Size(428, 946),

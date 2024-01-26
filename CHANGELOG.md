@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
+## [0.6.0] - 2024-01-26
+
+- **Release Date**: 2024-01-26
+
+### Added
+
+- **Appointements**
+  - Description: Added appointements to the application.
+  - Author: @bloopdex
+
 ## [0.5.0] - 2024-01-26
 
 - **Release Date**: 2024-01-26

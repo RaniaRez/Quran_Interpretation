@@ -16,4 +16,8 @@ class DateHelper {
   static DateTime parseExtra(String date) {
     return DateFormat('yyyy-MM-ddTHH:mm:ss.SSSZ').parse(date);
   }
+
+  static String dateTimeDisplay(DateTime dateTime) {
+    return DateFormat('EEEE, MMMM d "at" h:mm a z').format(dateTime);
+  }
 }

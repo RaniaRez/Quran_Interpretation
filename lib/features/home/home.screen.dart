@@ -1,6 +1,7 @@
 import 'package:app/core/const.dart';
 import 'package:app/core/extension.dart';
 import 'package:app/core/fonts.dart';
+import 'package:app/features/appointments/appointments.screen.dart';
 import 'package:app/features/quran/quran.screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -88,6 +89,7 @@ class HomeScreen extends StatelessWidget {
                       height: 150.sp,
                       title: 'home:appointments',
                       backgroundImage: 'assets/images/home/appointments.png',
+                      routeName: AppointmentsScreen.routeName,
                     ),
                     FeaturesCard(
                       width: context.width / 2 - kSpacingX3,
