@@ -12,12 +12,14 @@ class CustomButton extends StatelessWidget {
     this.backgroundColor = kPrimary,
     this.textColor = Colors.white,
     required this.height,
-    this.icon,
+    this.prefixIcon,
     this.disabled = false,
     this.width,
+    this.suffixIcon,
   });
   final String text;
-  final IconData? icon;
+  final IconData? prefixIcon;
+  final IconData? suffixIcon;
   final Color textColor;
   final double height;
   final double? width;
@@ -51,12 +53,12 @@ class CustomButton extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          if (icon != null)
+          if (prefixIcon != null)
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
                 Icon(
-                  icon,
+                  prefixIcon,
                   color: textColor,
                   size: 20.sp,
                 ),
@@ -68,6 +70,18 @@ class CustomButton extends StatelessWidget {
               textAlign: TextAlign.center,
               style:
                   context.textTheme.headlineMedium!.copyWith(color: textColor)),
+          if (suffixIcon != null)
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                SizedBox(width: kSpacingX1),
+                Icon(
+                  suffixIcon,
+                  color: textColor,
+                  size: 20.sp,
+                ),
+              ],
+            ),
         ],
       ),
     );

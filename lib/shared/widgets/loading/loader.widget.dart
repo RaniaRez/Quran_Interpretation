@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 
+import 'package:app/core/const.dart';
 import 'package:flutter/material.dart' '';
 
 class Arc extends CustomPainter {
@@ -64,7 +65,7 @@ class Loader extends StatefulWidget {
   const Loader({
     Key? key,
     required this.size,
-    required this.color,
+    this.color = kPrimary,
     this.ringColor = const Color(0x1A000000),
   }) : super(key: key);
 

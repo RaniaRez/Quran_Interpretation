@@ -1,5 +1,7 @@
 import 'package:app/features/home/home.screen.dart';
 import 'package:app/features/quran/quran.screen.dart';
+import 'package:app/features/surat/lessson.screen.dart';
+import 'package:app/features/surat/surat.screen.dart';
 import 'package:flutter/material.dart';
 
 import '../features/auth/login.screen.dart';
@@ -11,5 +13,7 @@ class AppRoutes {
     NavigationScreen.routeName: (context) => const NavigationScreen(),
     HomeScreen.routeName: (context) => const HomeScreen(),
     QuranScreen.routeName: (context) => const QuranScreen(),
+    SurahScreen.routeName: (context) => const SurahScreen(),
+    SurahLessonScreen.routeName: (context) => const SurahLessonScreen(),
   };
 }

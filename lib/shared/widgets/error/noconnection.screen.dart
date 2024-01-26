@@ -22,10 +22,7 @@ class NoInternetScreen extends StatelessWidget {
             Text(
               "errors:no-internet-connection".translate(context),
               textAlign: TextAlign.center,
-              style: Theme.of(context)
-                  .textTheme
-                  .titleLarge!
-                  .copyWith(color: kPrimary),
+              style: context.textTheme.titleLarge!.copyWith(color: kPrimary),
             ),
           ],
         ),

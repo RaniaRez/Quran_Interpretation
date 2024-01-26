@@ -86,5 +86,10 @@
     "quran:progress-talqueen": "Progression Talqueen",
     "quran:verses": "Versets",
     "quran:learn": "Apprendre",
-    "quran:read": "Lire"
+    "quran:read": "Lire",
+
+    "surah:play": "Jouer",
+    "surah:surah": "Sourate",
+    "surah:quiz": "Quiz",
+    "surah:next": "Suivant"
 }

@@ -100,6 +100,12 @@ Color surfaceFaded = kGray.shade300;
 
 Color iconSecondary = kGray.shade600;
 
+Gradient gradientPrimary = const LinearGradient(
+  begin: Alignment(0.71, -0.71),
+  end: Alignment(-0.71, 0.71),
+  colors: [Color(0xFFDF98FA), Color(0xFF9055FF)],
+);
+
 double kSpacingHalf = 4.sp;
 double kSpacingX1 = 8.sp;
 double kSpacingX2 = 16.sp;

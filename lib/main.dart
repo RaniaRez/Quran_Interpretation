@@ -15,6 +15,7 @@ import 'core/theme.dart';
 import 'features/auth/bloc/login/login_bloc.dart';
 import 'features/navigation/cubit/navigation_cubit.dart';
 import 'features/navigation/navigation.screen.dart';
+import 'features/surat/logic/surat_lesson/surah_lesson_cubit.dart';
 import 'logic/auth/auth_bloc.dart';
 import 'logic/localizations/localizations_bloc.dart';
 import 'logic/search/search_cubit.dart';
@@ -74,6 +75,8 @@ class MyAppState extends State<MyApp> with TickerProviderStateMixin {
           BlocProvider<NavigationCubit>(create: (context) => NavigationCubit()),
           BlocProvider<SearchCubit>(create: (context) => SearchCubit()),
           BlocProvider<TimeRangeCubit>(create: (context) => TimeRangeCubit()),
+          BlocProvider<SurahLessonCubit>(
+              create: (context) => SurahLessonCubit()),
         ],
         child: ScreenUtilInit(
             designSize: const Size(428, 946),

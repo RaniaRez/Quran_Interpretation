@@ -97,7 +97,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
     data.removeWhere(
       (key, value) => input.containsKey(key),
     );
-    print("Data $data");
 
     controller.previousPage(
       duration: const Duration(milliseconds: 300),

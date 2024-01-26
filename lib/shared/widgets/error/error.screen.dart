@@ -25,10 +25,7 @@ class ErrorScreen extends StatelessWidget {
               SizedBox(height: kSpacingX2),
               Text(
                 message.translate(context),
-                style: Theme.of(context)
-                    .textTheme
-                    .titleLarge!
-                    .copyWith(color: kPrimary),
+                style: context.textTheme.titleLarge!.copyWith(color: kPrimary),
               ),
             ],
           ),

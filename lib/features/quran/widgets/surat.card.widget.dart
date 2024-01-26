@@ -1,9 +1,11 @@
+import 'package:app/features/surat/lessson.screen.dart';
 import 'package:flutter/material.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 
 import '../../../core/const.dart';
 import '../../../core/extension.dart';
 import '../../../shared/widgets/buttons/button.widget.dart';
+import '../../surat/surat.screen.dart';
 
 class SuratCard extends StatelessWidget {
   const SuratCard({
@@ -85,16 +87,24 @@ class SuratCard extends StatelessWidget {
               children: [
                 CustomButton(
                   text: "quran:learn",
-                  icon: LucideIcons.brain,
+                  prefixIcon: LucideIcons.brain,
                   height: kSpacingX3,
                   width: kSpacingX6,
+                  onPressed: () {
+                    context.pushNamed(
+                      SurahLessonScreen.routeName,
+                      arguments: SurahLessonScreenArguments(numberSurat, 1),
+                    );
+                  },
                 ),
                 SizedBox(width: kSpacingX1),
                 CustomButton(
                   text: "quran:read",
-                  icon: LucideIcons.book,
+                  prefixIcon: LucideIcons.book,
                   height: kSpacingX3,
                   width: kSpacingX6,
+                  onPressed: () => context.pushNamed(SurahScreen.routeName,
+                      arguments: SurahScreenArguments(numberSurat)),
                 ),
               ],
             ),

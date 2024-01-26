@@ -4,10 +4,28 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
+## [0.3.0] - 2024-01-26
+
+- **Release Date**: 2024-01-26
+
+### Added
+
+- **Surat**
+  - Description: Added the details of the surah and the list of ayats.
+  - Author: @bloopdex
+- **Lessons of the surah**
+  - Description: Added the lessons of the surah.
+  - Author: @bloopdex
+
+### Deprecated
+
+- **Print on production code**
+  - Description: Removed the print on production code.
+  - Author: @bloopdex
+
 ## [0.2.0] - 2024-01-25
 
 - **Release Date**: 2024-01-25
-- **Commit Message**: `Added islamic screen and quran screen`
 
 ### Added
 
