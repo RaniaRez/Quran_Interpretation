@@ -8,7 +8,7 @@ part 'localizations_bloc.freezed.dart';
 
 class LocalizationsBloc extends Bloc<LocalizationsEvent, LocalizationsState> {
   LocalizationsBloc()
-      : super(const LocalizationsState(locale: Locale('fr', 'FR'))) {
+      : super(const LocalizationsState(locale: Locale('en', 'US'))) {
     on<LocalizationsEvent>((event, emit) {
       event.map(
         changeLocale: (e) => emit(LocalizationsState(locale: e.locale)),

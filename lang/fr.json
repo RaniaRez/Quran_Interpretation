@@ -102,5 +102,8 @@
     "appointments:teacher.edit": "Modifier",
     "appointments:teacher.delete": "Supprimer",
     "appointments:student.confirm": "Confirmer",
-    "appointments:join": "Rejoindre"
+    "appointments:join": "Rejoindre",
+
+    "duaa:duaa": "Duaa",
+    "duaa:description": "Voici quelques douas que vous pouvez lire pour vous-même et vos proches."
 }

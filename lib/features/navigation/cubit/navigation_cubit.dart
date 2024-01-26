@@ -1,3 +1,4 @@
+import 'package:app/features/duaa/duaa.screen.dart';
 import 'package:app/features/home/home.screen.dart';
 import 'package:app/features/reminders/reminders.screen.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,7 @@ extension AppScreensExtension on AppScreen {
       case AppScreen.notification:
         return const RemindersScreen();
       case AppScreen.duaa:
-        return const SizedBox.expand();
+        return const DuaaScreen();
       case AppScreen.leaderboard:
         return const SizedBox.expand();
       case AppScreen.leaderboard:

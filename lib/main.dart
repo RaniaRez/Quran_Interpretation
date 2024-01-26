@@ -1,6 +1,3 @@
-import 'package:app/features/appointments/logic/bloc/appointments_bloc.dart';
-import 'package:app/features/auth/bloc/signup/signup_bloc.dart';
-import 'package:app/features/auth/signup.screen.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -13,7 +10,11 @@ import 'core/const.dart';
 import 'core/localizations.dart';
 import 'core/routes.dart';
 import 'core/theme.dart';
+import 'features/appointments/logic/bloc/appointments_bloc.dart';
 import 'features/auth/bloc/login/login_bloc.dart';
+import 'features/auth/bloc/signup/signup_bloc.dart';
+import 'features/auth/signup.screen.dart';
+import 'features/duaa/logic/duaa/duaa_cubit.dart';
 import 'features/navigation/cubit/navigation_cubit.dart';
 import 'features/navigation/navigation.screen.dart';
 import 'features/reminders/logic/reminders/reminders_bloc.dart';
@@ -80,7 +81,9 @@ class MyAppState extends State<MyApp> with TickerProviderStateMixin {
           BlocProvider<SurahLessonCubit>(
               create: (context) => SurahLessonCubit()),
           BlocProvider<RemindersBloc>(create: (context) => RemindersBloc()),
-          BlocProvider<AppointmentsBloc>(create: (context) => AppointmentsBloc()),
+          BlocProvider<AppointmentsBloc>(
+              create: (context) => AppointmentsBloc()),
+          BlocProvider<DuaaCubit>(create: (context) => DuaaCubit()),
         ],
         child: ScreenUtilInit(
             designSize: const Size(428, 946),

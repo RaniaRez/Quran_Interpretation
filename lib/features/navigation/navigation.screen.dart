@@ -1,5 +1,6 @@
 import 'package:app/core/const.dart';
 import 'package:app/features/appointments/logic/bloc/appointments_bloc.dart';
+import 'package:app/features/duaa/logic/duaa/duaa_cubit.dart';
 import 'package:app/features/reminders/logic/reminders/reminders_bloc.dart';
 import 'package:app/logic/auth/auth_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -27,6 +28,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
   void initState() {
     context.read<RemindersBloc>().add(const RemindersEvent.started());
     context.read<AppointmentsBloc>().add(const AppointmentsEvent.started());
+    context.read<DuaaCubit>().start();
 
     super.initState();
   }
