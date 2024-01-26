@@ -85,26 +85,30 @@ class SuratCard extends StatelessWidget {
             SizedBox(height: kSpacingX2),
             Row(
               children: [
-                CustomButton(
-                  text: "quran:learn",
-                  prefixIcon: LucideIcons.brain,
-                  height: kSpacingX3,
-                  width: kSpacingX6,
-                  onPressed: () {
-                    context.pushNamed(
-                      SurahLessonScreen.routeName,
-                      arguments: SurahLessonScreenArguments(numberSurat, 1),
-                    );
-                  },
+                Expanded(
+                  child: CustomButton(
+                    text: "quran:learn",
+                    prefixIcon: LucideIcons.brain,
+                    height: kSpacingX3,
+                    width: kSpacingX6,
+                    onPressed: () {
+                      context.pushNamed(
+                        SurahLessonScreen.routeName,
+                        arguments: SurahLessonScreenArguments(numberSurat, 1),
+                      );
+                    },
+                  ),
                 ),
                 SizedBox(width: kSpacingX1),
-                CustomButton(
-                  text: "quran:read",
-                  prefixIcon: LucideIcons.book,
-                  height: kSpacingX3,
-                  width: kSpacingX6,
-                  onPressed: () => context.pushNamed(SurahScreen.routeName,
-                      arguments: SurahScreenArguments(numberSurat)),
+                Expanded(
+                  child: CustomButton(
+                    text: "quran:read",
+                    prefixIcon: LucideIcons.book,
+                    height: kSpacingX3,
+                    width: kSpacingX6,
+                    onPressed: () => context.pushNamed(SurahScreen.routeName,
+                        arguments: SurahScreenArguments(numberSurat)),
+                  ),
                 ),
               ],
             ),
