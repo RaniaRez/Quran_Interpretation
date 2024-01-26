@@ -67,10 +67,10 @@
     "auth:signup:select_avatar": "Sélectionnée Avatar",
 
     "layout:home": "Accueil",
-    "layout:medicaments": "Produits",
-    "layout:orders": "Commandes",
-    "layout:card": "Panier",
-    "layout:menu": "Menu",
+    "layout:notification": "Notification",
+    "layout:duaa": "Duaa",
+    "layout:chat": "Chat Bot",
+    "layout:leaderboard": "Classement",
 
     "home:hey": "Salam",
     "home:memorize-review-quran": "Mémoriser et réviser le Quran",
@@ -91,5 +91,7 @@
     "surah:play": "Jouer",
     "surah:surah": "Sourate",
     "surah:quiz": "Quiz",
-    "surah:next": "Suivant"
+    "surah:next": "Suivant",
+
+    "notification:mine": "Mes notifications"
 }

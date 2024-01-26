@@ -1,4 +1,5 @@
 import 'package:app/features/home/home.screen.dart';
+import 'package:app/features/reminders/reminders.screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -25,7 +26,7 @@ extension AppScreensExtension on AppScreen {
       case AppScreen.home:
         return const HomeScreen();
       case AppScreen.notification:
-        return const SizedBox.expand();
+        return const RemindersScreen();
       case AppScreen.duaa:
         return const SizedBox.expand();
       case AppScreen.leaderboard:

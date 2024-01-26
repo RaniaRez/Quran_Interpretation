@@ -29,27 +29,27 @@ class CustomBottomNavigationBar extends StatelessWidget {
       items: [
         BottomNavigationBarItem(
           icon: const Icon(LucideIcons.mailOpen),
-          label: "nav:${AppScreen.notification.name.translate(context)}"
+          label: "layout:${AppScreen.notification.name.translate(context)}"
               .translate(context),
         ),
         BottomNavigationBarItem(
           icon: const Icon(LucideIcons.heartHandshake),
-          label: "nav:${AppScreen.duaa.name.translate(context)}"
+          label: "layout:${AppScreen.duaa.name.translate(context)}"
               .translate(context),
         ),
         BottomNavigationBarItem(
           icon: const Icon(LucideIcons.home),
-          label: "nav:${AppScreen.home.name.translate(context)}"
+          label: "layout:${AppScreen.home.name.translate(context)}"
               .translate(context),
         ),
         BottomNavigationBarItem(
           icon: const Icon(LucideIcons.messageCircle),
-          label: "nav:${AppScreen.chat.name.translate(context)}"
+          label: "layout:${AppScreen.chat.name.translate(context)}"
               .translate(context),
         ),
         BottomNavigationBarItem(
           icon: const Icon(LucideIcons.trophy),
-          label: "nav:${AppScreen.leaderboard.name.translate(context)}"
+          label: "layout:${AppScreen.leaderboard.name.translate(context)}"
               .translate(context),
         ),
       ],
