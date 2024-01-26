@@ -19,56 +19,56 @@ mixin _$NavigationState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() home,
-    required TResult Function() medicaments,
-    required TResult Function() orders,
-    required TResult Function() card,
-    required TResult Function() menu,
+    required TResult Function() notification,
+    required TResult Function() duaa,
+    required TResult Function() chat,
+    required TResult Function() leaderboard,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? home,
-    TResult? Function()? medicaments,
-    TResult? Function()? orders,
-    TResult? Function()? card,
-    TResult? Function()? menu,
+    TResult? Function()? notification,
+    TResult? Function()? duaa,
+    TResult? Function()? chat,
+    TResult? Function()? leaderboard,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
-    TResult Function()? medicaments,
-    TResult Function()? orders,
-    TResult Function()? card,
-    TResult Function()? menu,
+    TResult Function()? notification,
+    TResult Function()? duaa,
+    TResult Function()? chat,
+    TResult Function()? leaderboard,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Home value) home,
-    required TResult Function(_Medicaments value) medicaments,
-    required TResult Function(_Orders value) orders,
-    required TResult Function(_Card value) card,
-    required TResult Function(_Menu value) menu,
+    required TResult Function(_Notification value) notification,
+    required TResult Function(_Duaa value) duaa,
+    required TResult Function(_Chat value) chat,
+    required TResult Function(_Leaderboard value) leaderboard,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Home value)? home,
-    TResult? Function(_Medicaments value)? medicaments,
-    TResult? Function(_Orders value)? orders,
-    TResult? Function(_Card value)? card,
-    TResult? Function(_Menu value)? menu,
+    TResult? Function(_Notification value)? notification,
+    TResult? Function(_Duaa value)? duaa,
+    TResult? Function(_Chat value)? chat,
+    TResult? Function(_Leaderboard value)? leaderboard,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Home value)? home,
-    TResult Function(_Medicaments value)? medicaments,
-    TResult Function(_Orders value)? orders,
-    TResult Function(_Card value)? card,
-    TResult Function(_Menu value)? menu,
+    TResult Function(_Notification value)? notification,
+    TResult Function(_Duaa value)? duaa,
+    TResult Function(_Chat value)? chat,
+    TResult Function(_Leaderboard value)? leaderboard,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -130,10 +130,10 @@ class _$HomeImpl implements _Home {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() home,
-    required TResult Function() medicaments,
-    required TResult Function() orders,
-    required TResult Function() card,
-    required TResult Function() menu,
+    required TResult Function() notification,
+    required TResult Function() duaa,
+    required TResult Function() chat,
+    required TResult Function() leaderboard,
   }) {
     return home();
   }
@@ -142,10 +142,10 @@ class _$HomeImpl implements _Home {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? home,
-    TResult? Function()? medicaments,
-    TResult? Function()? orders,
-    TResult? Function()? card,
-    TResult? Function()? menu,
+    TResult? Function()? notification,
+    TResult? Function()? duaa,
+    TResult? Function()? chat,
+    TResult? Function()? leaderboard,
   }) {
     return home?.call();
   }
@@ -154,10 +154,10 @@ class _$HomeImpl implements _Home {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
-    TResult Function()? medicaments,
-    TResult Function()? orders,
-    TResult Function()? card,
-    TResult Function()? menu,
+    TResult Function()? notification,
+    TResult Function()? duaa,
+    TResult Function()? chat,
+    TResult Function()? leaderboard,
     required TResult orElse(),
   }) {
     if (home != null) {
@@ -170,10 +170,10 @@ class _$HomeImpl implements _Home {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Home value) home,
-    required TResult Function(_Medicaments value) medicaments,
-    required TResult Function(_Orders value) orders,
-    required TResult Function(_Card value) card,
-    required TResult Function(_Menu value) menu,
+    required TResult Function(_Notification value) notification,
+    required TResult Function(_Duaa value) duaa,
+    required TResult Function(_Chat value) chat,
+    required TResult Function(_Leaderboard value) leaderboard,
   }) {
     return home(this);
   }
@@ -182,10 +182,10 @@ class _$HomeImpl implements _Home {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Home value)? home,
-    TResult? Function(_Medicaments value)? medicaments,
-    TResult? Function(_Orders value)? orders,
-    TResult? Function(_Card value)? card,
-    TResult? Function(_Menu value)? menu,
+    TResult? Function(_Notification value)? notification,
+    TResult? Function(_Duaa value)? duaa,
+    TResult? Function(_Chat value)? chat,
+    TResult? Function(_Leaderboard value)? leaderboard,
   }) {
     return home?.call(this);
   }
@@ -194,10 +194,10 @@ class _$HomeImpl implements _Home {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Home value)? home,
-    TResult Function(_Medicaments value)? medicaments,
-    TResult Function(_Orders value)? orders,
-    TResult Function(_Card value)? card,
-    TResult Function(_Menu value)? menu,
+    TResult Function(_Notification value)? notification,
+    TResult Function(_Duaa value)? duaa,
+    TResult Function(_Chat value)? chat,
+    TResult Function(_Leaderboard value)? leaderboard,
     required TResult orElse(),
   }) {
     if (home != null) {
@@ -212,35 +212,35 @@ abstract class _Home implements NavigationState {
 }
 
 /// @nodoc
-abstract class _$$MedicamentsImplCopyWith<$Res> {
-  factory _$$MedicamentsImplCopyWith(
-          _$MedicamentsImpl value, $Res Function(_$MedicamentsImpl) then) =
-      __$$MedicamentsImplCopyWithImpl<$Res>;
+abstract class _$$NotificationImplCopyWith<$Res> {
+  factory _$$NotificationImplCopyWith(
+          _$NotificationImpl value, $Res Function(_$NotificationImpl) then) =
+      __$$NotificationImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$MedicamentsImplCopyWithImpl<$Res>
-    extends _$NavigationStateCopyWithImpl<$Res, _$MedicamentsImpl>
-    implements _$$MedicamentsImplCopyWith<$Res> {
-  __$$MedicamentsImplCopyWithImpl(
-      _$MedicamentsImpl _value, $Res Function(_$MedicamentsImpl) _then)
+class __$$NotificationImplCopyWithImpl<$Res>
+    extends _$NavigationStateCopyWithImpl<$Res, _$NotificationImpl>
+    implements _$$NotificationImplCopyWith<$Res> {
+  __$$NotificationImplCopyWithImpl(
+      _$NotificationImpl _value, $Res Function(_$NotificationImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$MedicamentsImpl implements _Medicaments {
-  const _$MedicamentsImpl();
+class _$NotificationImpl implements _Notification {
+  const _$NotificationImpl();
 
   @override
   String toString() {
-    return 'NavigationState.medicaments()';
+    return 'NavigationState.notification()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$MedicamentsImpl);
+        (other.runtimeType == runtimeType && other is _$NotificationImpl);
   }
 
   @override
@@ -250,38 +250,38 @@ class _$MedicamentsImpl implements _Medicaments {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() home,
-    required TResult Function() medicaments,
-    required TResult Function() orders,
-    required TResult Function() card,
-    required TResult Function() menu,
+    required TResult Function() notification,
+    required TResult Function() duaa,
+    required TResult Function() chat,
+    required TResult Function() leaderboard,
   }) {
-    return medicaments();
+    return notification();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? home,
-    TResult? Function()? medicaments,
-    TResult? Function()? orders,
-    TResult? Function()? card,
-    TResult? Function()? menu,
+    TResult? Function()? notification,
+    TResult? Function()? duaa,
+    TResult? Function()? chat,
+    TResult? Function()? leaderboard,
   }) {
-    return medicaments?.call();
+    return notification?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
-    TResult Function()? medicaments,
-    TResult Function()? orders,
-    TResult Function()? card,
-    TResult Function()? menu,
+    TResult Function()? notification,
+    TResult Function()? duaa,
+    TResult Function()? chat,
+    TResult Function()? leaderboard,
     required TResult orElse(),
   }) {
-    if (medicaments != null) {
-      return medicaments();
+    if (notification != null) {
+      return notification();
     }
     return orElse();
   }
@@ -290,77 +290,76 @@ class _$MedicamentsImpl implements _Medicaments {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Home value) home,
-    required TResult Function(_Medicaments value) medicaments,
-    required TResult Function(_Orders value) orders,
-    required TResult Function(_Card value) card,
-    required TResult Function(_Menu value) menu,
+    required TResult Function(_Notification value) notification,
+    required TResult Function(_Duaa value) duaa,
+    required TResult Function(_Chat value) chat,
+    required TResult Function(_Leaderboard value) leaderboard,
   }) {
-    return medicaments(this);
+    return notification(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Home value)? home,
-    TResult? Function(_Medicaments value)? medicaments,
-    TResult? Function(_Orders value)? orders,
-    TResult? Function(_Card value)? card,
-    TResult? Function(_Menu value)? menu,
+    TResult? Function(_Notification value)? notification,
+    TResult? Function(_Duaa value)? duaa,
+    TResult? Function(_Chat value)? chat,
+    TResult? Function(_Leaderboard value)? leaderboard,
   }) {
-    return medicaments?.call(this);
+    return notification?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Home value)? home,
-    TResult Function(_Medicaments value)? medicaments,
-    TResult Function(_Orders value)? orders,
-    TResult Function(_Card value)? card,
-    TResult Function(_Menu value)? menu,
+    TResult Function(_Notification value)? notification,
+    TResult Function(_Duaa value)? duaa,
+    TResult Function(_Chat value)? chat,
+    TResult Function(_Leaderboard value)? leaderboard,
     required TResult orElse(),
   }) {
-    if (medicaments != null) {
-      return medicaments(this);
+    if (notification != null) {
+      return notification(this);
     }
     return orElse();
   }
 }
 
-abstract class _Medicaments implements NavigationState {
-  const factory _Medicaments() = _$MedicamentsImpl;
+abstract class _Notification implements NavigationState {
+  const factory _Notification() = _$NotificationImpl;
 }
 
 /// @nodoc
-abstract class _$$OrdersImplCopyWith<$Res> {
-  factory _$$OrdersImplCopyWith(
-          _$OrdersImpl value, $Res Function(_$OrdersImpl) then) =
-      __$$OrdersImplCopyWithImpl<$Res>;
+abstract class _$$DuaaImplCopyWith<$Res> {
+  factory _$$DuaaImplCopyWith(
+          _$DuaaImpl value, $Res Function(_$DuaaImpl) then) =
+      __$$DuaaImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$OrdersImplCopyWithImpl<$Res>
-    extends _$NavigationStateCopyWithImpl<$Res, _$OrdersImpl>
-    implements _$$OrdersImplCopyWith<$Res> {
-  __$$OrdersImplCopyWithImpl(
-      _$OrdersImpl _value, $Res Function(_$OrdersImpl) _then)
+class __$$DuaaImplCopyWithImpl<$Res>
+    extends _$NavigationStateCopyWithImpl<$Res, _$DuaaImpl>
+    implements _$$DuaaImplCopyWith<$Res> {
+  __$$DuaaImplCopyWithImpl(_$DuaaImpl _value, $Res Function(_$DuaaImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$OrdersImpl implements _Orders {
-  const _$OrdersImpl();
+class _$DuaaImpl implements _Duaa {
+  const _$DuaaImpl();
 
   @override
   String toString() {
-    return 'NavigationState.orders()';
+    return 'NavigationState.duaa()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$OrdersImpl);
+        (other.runtimeType == runtimeType && other is _$DuaaImpl);
   }
 
   @override
@@ -370,38 +369,38 @@ class _$OrdersImpl implements _Orders {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() home,
-    required TResult Function() medicaments,
-    required TResult Function() orders,
-    required TResult Function() card,
-    required TResult Function() menu,
+    required TResult Function() notification,
+    required TResult Function() duaa,
+    required TResult Function() chat,
+    required TResult Function() leaderboard,
   }) {
-    return orders();
+    return duaa();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? home,
-    TResult? Function()? medicaments,
-    TResult? Function()? orders,
-    TResult? Function()? card,
-    TResult? Function()? menu,
+    TResult? Function()? notification,
+    TResult? Function()? duaa,
+    TResult? Function()? chat,
+    TResult? Function()? leaderboard,
   }) {
-    return orders?.call();
+    return duaa?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
-    TResult Function()? medicaments,
-    TResult Function()? orders,
-    TResult Function()? card,
-    TResult Function()? menu,
+    TResult Function()? notification,
+    TResult Function()? duaa,
+    TResult Function()? chat,
+    TResult Function()? leaderboard,
     required TResult orElse(),
   }) {
-    if (orders != null) {
-      return orders();
+    if (duaa != null) {
+      return duaa();
     }
     return orElse();
   }
@@ -410,76 +409,76 @@ class _$OrdersImpl implements _Orders {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Home value) home,
-    required TResult Function(_Medicaments value) medicaments,
-    required TResult Function(_Orders value) orders,
-    required TResult Function(_Card value) card,
-    required TResult Function(_Menu value) menu,
+    required TResult Function(_Notification value) notification,
+    required TResult Function(_Duaa value) duaa,
+    required TResult Function(_Chat value) chat,
+    required TResult Function(_Leaderboard value) leaderboard,
   }) {
-    return orders(this);
+    return duaa(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Home value)? home,
-    TResult? Function(_Medicaments value)? medicaments,
-    TResult? Function(_Orders value)? orders,
-    TResult? Function(_Card value)? card,
-    TResult? Function(_Menu value)? menu,
+    TResult? Function(_Notification value)? notification,
+    TResult? Function(_Duaa value)? duaa,
+    TResult? Function(_Chat value)? chat,
+    TResult? Function(_Leaderboard value)? leaderboard,
   }) {
-    return orders?.call(this);
+    return duaa?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Home value)? home,
-    TResult Function(_Medicaments value)? medicaments,
-    TResult Function(_Orders value)? orders,
-    TResult Function(_Card value)? card,
-    TResult Function(_Menu value)? menu,
+    TResult Function(_Notification value)? notification,
+    TResult Function(_Duaa value)? duaa,
+    TResult Function(_Chat value)? chat,
+    TResult Function(_Leaderboard value)? leaderboard,
     required TResult orElse(),
   }) {
-    if (orders != null) {
-      return orders(this);
+    if (duaa != null) {
+      return duaa(this);
     }
     return orElse();
   }
 }
 
-abstract class _Orders implements NavigationState {
-  const factory _Orders() = _$OrdersImpl;
+abstract class _Duaa implements NavigationState {
+  const factory _Duaa() = _$DuaaImpl;
 }
 
 /// @nodoc
-abstract class _$$CardImplCopyWith<$Res> {
-  factory _$$CardImplCopyWith(
-          _$CardImpl value, $Res Function(_$CardImpl) then) =
-      __$$CardImplCopyWithImpl<$Res>;
+abstract class _$$ChatImplCopyWith<$Res> {
+  factory _$$ChatImplCopyWith(
+          _$ChatImpl value, $Res Function(_$ChatImpl) then) =
+      __$$ChatImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$CardImplCopyWithImpl<$Res>
-    extends _$NavigationStateCopyWithImpl<$Res, _$CardImpl>
-    implements _$$CardImplCopyWith<$Res> {
-  __$$CardImplCopyWithImpl(_$CardImpl _value, $Res Function(_$CardImpl) _then)
+class __$$ChatImplCopyWithImpl<$Res>
+    extends _$NavigationStateCopyWithImpl<$Res, _$ChatImpl>
+    implements _$$ChatImplCopyWith<$Res> {
+  __$$ChatImplCopyWithImpl(_$ChatImpl _value, $Res Function(_$ChatImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$CardImpl implements _Card {
-  const _$CardImpl();
+class _$ChatImpl implements _Chat {
+  const _$ChatImpl();
 
   @override
   String toString() {
-    return 'NavigationState.card()';
+    return 'NavigationState.chat()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$CardImpl);
+        (other.runtimeType == runtimeType && other is _$ChatImpl);
   }
 
   @override
@@ -489,38 +488,38 @@ class _$CardImpl implements _Card {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() home,
-    required TResult Function() medicaments,
-    required TResult Function() orders,
-    required TResult Function() card,
-    required TResult Function() menu,
+    required TResult Function() notification,
+    required TResult Function() duaa,
+    required TResult Function() chat,
+    required TResult Function() leaderboard,
   }) {
-    return card();
+    return chat();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? home,
-    TResult? Function()? medicaments,
-    TResult? Function()? orders,
-    TResult? Function()? card,
-    TResult? Function()? menu,
+    TResult? Function()? notification,
+    TResult? Function()? duaa,
+    TResult? Function()? chat,
+    TResult? Function()? leaderboard,
   }) {
-    return card?.call();
+    return chat?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
-    TResult Function()? medicaments,
-    TResult Function()? orders,
-    TResult Function()? card,
-    TResult Function()? menu,
+    TResult Function()? notification,
+    TResult Function()? duaa,
+    TResult Function()? chat,
+    TResult Function()? leaderboard,
     required TResult orElse(),
   }) {
-    if (card != null) {
-      return card();
+    if (chat != null) {
+      return chat();
     }
     return orElse();
   }
@@ -529,76 +528,77 @@ class _$CardImpl implements _Card {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Home value) home,
-    required TResult Function(_Medicaments value) medicaments,
-    required TResult Function(_Orders value) orders,
-    required TResult Function(_Card value) card,
-    required TResult Function(_Menu value) menu,
+    required TResult Function(_Notification value) notification,
+    required TResult Function(_Duaa value) duaa,
+    required TResult Function(_Chat value) chat,
+    required TResult Function(_Leaderboard value) leaderboard,
   }) {
-    return card(this);
+    return chat(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Home value)? home,
-    TResult? Function(_Medicaments value)? medicaments,
-    TResult? Function(_Orders value)? orders,
-    TResult? Function(_Card value)? card,
-    TResult? Function(_Menu value)? menu,
+    TResult? Function(_Notification value)? notification,
+    TResult? Function(_Duaa value)? duaa,
+    TResult? Function(_Chat value)? chat,
+    TResult? Function(_Leaderboard value)? leaderboard,
   }) {
-    return card?.call(this);
+    return chat?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Home value)? home,
-    TResult Function(_Medicaments value)? medicaments,
-    TResult Function(_Orders value)? orders,
-    TResult Function(_Card value)? card,
-    TResult Function(_Menu value)? menu,
+    TResult Function(_Notification value)? notification,
+    TResult Function(_Duaa value)? duaa,
+    TResult Function(_Chat value)? chat,
+    TResult Function(_Leaderboard value)? leaderboard,
     required TResult orElse(),
   }) {
-    if (card != null) {
-      return card(this);
+    if (chat != null) {
+      return chat(this);
     }
     return orElse();
   }
 }
 
-abstract class _Card implements NavigationState {
-  const factory _Card() = _$CardImpl;
+abstract class _Chat implements NavigationState {
+  const factory _Chat() = _$ChatImpl;
 }
 
 /// @nodoc
-abstract class _$$MenuImplCopyWith<$Res> {
-  factory _$$MenuImplCopyWith(
-          _$MenuImpl value, $Res Function(_$MenuImpl) then) =
-      __$$MenuImplCopyWithImpl<$Res>;
+abstract class _$$LeaderboardImplCopyWith<$Res> {
+  factory _$$LeaderboardImplCopyWith(
+          _$LeaderboardImpl value, $Res Function(_$LeaderboardImpl) then) =
+      __$$LeaderboardImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$MenuImplCopyWithImpl<$Res>
-    extends _$NavigationStateCopyWithImpl<$Res, _$MenuImpl>
-    implements _$$MenuImplCopyWith<$Res> {
-  __$$MenuImplCopyWithImpl(_$MenuImpl _value, $Res Function(_$MenuImpl) _then)
+class __$$LeaderboardImplCopyWithImpl<$Res>
+    extends _$NavigationStateCopyWithImpl<$Res, _$LeaderboardImpl>
+    implements _$$LeaderboardImplCopyWith<$Res> {
+  __$$LeaderboardImplCopyWithImpl(
+      _$LeaderboardImpl _value, $Res Function(_$LeaderboardImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$MenuImpl implements _Menu {
-  const _$MenuImpl();
+class _$LeaderboardImpl implements _Leaderboard {
+  const _$LeaderboardImpl();
 
   @override
   String toString() {
-    return 'NavigationState.menu()';
+    return 'NavigationState.leaderboard()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$MenuImpl);
+        (other.runtimeType == runtimeType && other is _$LeaderboardImpl);
   }
 
   @override
@@ -608,38 +608,38 @@ class _$MenuImpl implements _Menu {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() home,
-    required TResult Function() medicaments,
-    required TResult Function() orders,
-    required TResult Function() card,
-    required TResult Function() menu,
+    required TResult Function() notification,
+    required TResult Function() duaa,
+    required TResult Function() chat,
+    required TResult Function() leaderboard,
   }) {
-    return menu();
+    return leaderboard();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? home,
-    TResult? Function()? medicaments,
-    TResult? Function()? orders,
-    TResult? Function()? card,
-    TResult? Function()? menu,
+    TResult? Function()? notification,
+    TResult? Function()? duaa,
+    TResult? Function()? chat,
+    TResult? Function()? leaderboard,
   }) {
-    return menu?.call();
+    return leaderboard?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
-    TResult Function()? medicaments,
-    TResult Function()? orders,
-    TResult Function()? card,
-    TResult Function()? menu,
+    TResult Function()? notification,
+    TResult Function()? duaa,
+    TResult Function()? chat,
+    TResult Function()? leaderboard,
     required TResult orElse(),
   }) {
-    if (menu != null) {
-      return menu();
+    if (leaderboard != null) {
+      return leaderboard();
     }
     return orElse();
   }
@@ -648,43 +648,43 @@ class _$MenuImpl implements _Menu {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Home value) home,
-    required TResult Function(_Medicaments value) medicaments,
-    required TResult Function(_Orders value) orders,
-    required TResult Function(_Card value) card,
-    required TResult Function(_Menu value) menu,
+    required TResult Function(_Notification value) notification,
+    required TResult Function(_Duaa value) duaa,
+    required TResult Function(_Chat value) chat,
+    required TResult Function(_Leaderboard value) leaderboard,
   }) {
-    return menu(this);
+    return leaderboard(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Home value)? home,
-    TResult? Function(_Medicaments value)? medicaments,
-    TResult? Function(_Orders value)? orders,
-    TResult? Function(_Card value)? card,
-    TResult? Function(_Menu value)? menu,
+    TResult? Function(_Notification value)? notification,
+    TResult? Function(_Duaa value)? duaa,
+    TResult? Function(_Chat value)? chat,
+    TResult? Function(_Leaderboard value)? leaderboard,
   }) {
-    return menu?.call(this);
+    return leaderboard?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Home value)? home,
-    TResult Function(_Medicaments value)? medicaments,
-    TResult Function(_Orders value)? orders,
-    TResult Function(_Card value)? card,
-    TResult Function(_Menu value)? menu,
+    TResult Function(_Notification value)? notification,
+    TResult Function(_Duaa value)? duaa,
+    TResult Function(_Chat value)? chat,
+    TResult Function(_Leaderboard value)? leaderboard,
     required TResult orElse(),
   }) {
-    if (menu != null) {
-      return menu(this);
+    if (leaderboard != null) {
+      return leaderboard(this);
     }
     return orElse();
   }
 }
 
-abstract class _Menu implements NavigationState {
-  const factory _Menu() = _$MenuImpl;
+abstract class _Leaderboard implements NavigationState {
+  const factory _Leaderboard() = _$LeaderboardImpl;
 }

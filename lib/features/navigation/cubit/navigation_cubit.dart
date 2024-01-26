@@ -7,14 +7,16 @@ part 'navigation_state.dart';
 part 'navigation_cubit.freezed.dart';
 
 enum AppScreen {
-  home(0),
-  medicaments(1),
-  orders(2),
-  card(3),
-  menu(4);
+  notification(0, "notification"),
+  duaa(1, "duaa"),
+  home(2, "home"),
+  chat(3, "chat"),
+  leaderboard(4, "leaderboard"),
+  ;
 
-  const AppScreen(this.value);
+  const AppScreen(this.value, this.name);
   final num value;
+  final String name;
 }
 
 extension AppScreensExtension on AppScreen {
@@ -22,13 +24,13 @@ extension AppScreensExtension on AppScreen {
     switch (this) {
       case AppScreen.home:
         return const HomeScreen();
-      case AppScreen.medicaments:
+      case AppScreen.notification:
         return const SizedBox.expand();
-      case AppScreen.orders:
+      case AppScreen.duaa:
         return const SizedBox.expand();
-      case AppScreen.card:
+      case AppScreen.leaderboard:
         return const SizedBox.expand();
-      case AppScreen.menu:
+      case AppScreen.leaderboard:
         return const SizedBox.expand();
       default:
         return const SizedBox.shrink();
@@ -50,55 +52,55 @@ class NavigationCubit extends Cubit<NavigationState> {
   void change(int index) {
     switch (index) {
       case 0:
-        home();
+        notification();
         break;
       case 1:
-        medicaments();
+        duaa();
         break;
       case 2:
-        orders();
+        home();
         break;
       case 3:
-        card();
+        chat();
         break;
       case 4:
-        menu();
+        leaderboard();
         break;
     }
+  }
+
+  void notification() {
+    current = AppScreen.notification;
+    currentScreen = AppScreen.notification.screen;
+    title = AppScreen.notification.name;
+    emit(const NavigationState.notification());
+  }
+
+  void duaa() {
+    current = AppScreen.duaa;
+    currentScreen = AppScreen.duaa.screen;
+    title = AppScreen.duaa.name;
+    emit(const NavigationState.duaa());
   }
 
   void home() {
     current = AppScreen.home;
     currentScreen = AppScreen.home.screen;
-    title = 'home';
+    title = AppScreen.home.name;
     emit(const NavigationState.home());
   }
 
-  void medicaments() {
-    current = AppScreen.medicaments;
-    currentScreen = AppScreen.medicaments.screen;
-    title = 'medicaments';
-    emit(const NavigationState.medicaments());
+  void chat() {
+    current = AppScreen.chat;
+    currentScreen = AppScreen.chat.screen;
+    title = AppScreen.chat.name;
+    emit(const NavigationState.chat());
   }
 
-  void orders() {
-    current = AppScreen.orders;
-    currentScreen = AppScreen.orders.screen;
-    title = 'orders';
-    emit(const NavigationState.orders());
-  }
-
-  void card() {
-    current = AppScreen.card;
-    currentScreen = AppScreen.card.screen;
-    title = 'card';
-    emit(const NavigationState.card());
-  }
-
-  void menu() {
-    current = AppScreen.menu;
-    currentScreen = AppScreen.menu.screen;
-    title = 'menu';
-    emit(const NavigationState.menu());
+  void leaderboard() {
+    current = AppScreen.leaderboard;
+    currentScreen = AppScreen.leaderboard.screen;
+    title = AppScreen.leaderboard.name;
+    emit(const NavigationState.leaderboard());
   }
 }

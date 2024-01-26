@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../shared/screens/islamic.screen.dart';
 import '../../shared/widgets/navigations/appbar.widget.dart';
+import '../../shared/widgets/navigations/bottom.navigationbar.widget.dart';
 import 'cubit/navigation_cubit.dart';
 
 class NavigationScreen extends StatefulWidget {
@@ -34,12 +35,13 @@ class _NavigationScreenState extends State<NavigationScreen> {
         NavigationCubit layout = NavigationCubit.get(context);
         return IslamicScaffold(
           appBar: CustomAppBar(
-            title: layout.current.value == 0
+            title: layout.current.value == 2
                 ? Text(
-                    "${"home:hey".translate(context)} ${context.read<AuthBloc>().user.username}")
+                    "${"home:hey".translate(context)} ${context.read<AuthBloc>().user.username} 👋🏽")
                 : null,
           ),
           body: layout.currentScreen,
+          bottomNavigationBar: CustomBottomNavigationBar(layout: layout),
         );
       },
     );

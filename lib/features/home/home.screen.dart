@@ -61,11 +61,12 @@ class HomeScreen extends StatelessWidget {
             Expanded(
                 child: Container(
               width: context.width,
-              padding: EdgeInsets.symmetric(
-                  horizontal: kSpacingX2, vertical: kSpacingX3),
+              padding: EdgeInsets.only(
+                  right: kSpacingX2, left: kSpacingX2, top: kSpacingX3),
               decoration: BoxDecoration(
                 color: surfaceBrand,
-                borderRadius: BorderRadius.circular(kSpacingX6),
+                borderRadius:
+                    BorderRadius.vertical(top: Radius.circular(kSpacingX6)),
               ),
               child: SingleChildScrollView(
                 child: Wrap(

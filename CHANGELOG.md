@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
+## [0.4.0] - 2024-01-26
+
+- **Release Date**: 2024-01-26
+
+### Added
+
+- **Bottom Navigation Bar**
+  - Description: Added the details of the surah and the list of ayats.
+  - Author: @bloopdex
+  
+### Fixed
+
+- **Navigation Cubit**
+  - Description: Fixed the navigation app screens to make it more readable and easier to maintain.
+  - Author: @bloopdex
+
 ## [0.3.0] - 2024-01-26
 
 - **Release Date**: 2024-01-26
