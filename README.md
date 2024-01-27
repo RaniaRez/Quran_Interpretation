@@ -13,6 +13,7 @@
 * **Rezkellah Rania FatmaZohra** - jf_rezkellah@esi.dz
 * **Adimi Alaa Dania** - ja_adimi@esi.dz
 * **Benhamida Rami** - bloopdex@gmail.com
+* **Hamzaoui Imane** - ji_hamazaoui@esi.dz
 
 ## Technology Stack
 
