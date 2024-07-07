@@ -9,10 +9,10 @@ class CustomLoader extends StatefulWidget {
   final double size;
 
   @override
-  _CustomLoaderState createState() => _CustomLoaderState();
+  CustomLoaderState createState() => CustomLoaderState();
 }
 
-class _CustomLoaderState extends State<CustomLoader>
+class CustomLoaderState extends State<CustomLoader>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   double get size => widget.size;
@@ -147,5 +147,5 @@ class CustomCircularLoader extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(CustomCircularLoader old) => false;
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }

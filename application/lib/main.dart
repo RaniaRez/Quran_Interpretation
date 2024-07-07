@@ -31,9 +31,7 @@ import 'shared/widgets/loading/loading.screen.dart';
 void main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-
   runApp(const MyApp());
 }
 

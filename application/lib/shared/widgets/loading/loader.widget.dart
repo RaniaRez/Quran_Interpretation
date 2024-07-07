@@ -63,11 +63,11 @@ class Loader extends StatefulWidget {
   final Color ringColor;
 
   const Loader({
-    Key? key,
+    super.key,
     required this.size,
     this.color = kPrimary,
     this.ringColor = const Color(0x1A000000),
-  }) : super(key: key);
+  });
 
   @override
   _LoaderState createState() => _LoaderState();

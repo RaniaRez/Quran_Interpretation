@@ -5,12 +5,11 @@ import '../../../core/const.dart';
 
 class CustomLocalImage extends StatelessWidget {
   const CustomLocalImage(
-      {Key? key,
+      {super.key,
       required this.image,
       this.fit = BoxFit.cover,
       this.width,
-      this.height})
-      : super(key: key);
+      this.height});
 
   final String image;
   final BoxFit fit;

@@ -1,6 +1,7 @@
-import 'const.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'const.dart';
 
 class AppTheme {
   static TextTheme lightTextTheme() => TextTheme(
@@ -179,14 +180,14 @@ class AppTheme {
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(kPrimary),
-            padding: MaterialStateProperty.all(
+            backgroundColor: WidgetStateProperty.all(kPrimary),
+            padding: WidgetStateProperty.all(
               EdgeInsets.symmetric(
                 horizontal: 10.sp,
                 vertical: 5.sp,
               ),
             ),
-            shape: MaterialStateProperty.all(
+            shape: WidgetStateProperty.all(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(kCornerButtonRadius),
               ),
@@ -252,14 +253,14 @@ class AppTheme {
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(kPrimary.shade900),
-            padding: MaterialStateProperty.all(
+            backgroundColor: WidgetStateProperty.all(kPrimary.shade900),
+            padding: WidgetStateProperty.all(
               EdgeInsets.symmetric(
                 horizontal: 10.sp,
                 vertical: 5.sp,
               ),
             ),
-            shape: MaterialStateProperty.all(
+            shape: WidgetStateProperty.all(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(kCornerButtonRadius),
               ),
