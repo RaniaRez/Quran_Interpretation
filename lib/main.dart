@@ -62,26 +62,21 @@ class MyAppState extends State<MyApp> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
         providers: [
-          BlocProvider<LocalizationsBloc>(
-              create: (context) => LocalizationsBloc()),
-          BlocProvider(
-            create: (context) => authBloc,
-          ),
+          BlocProvider<LocalizationsBloc>(create: (_) => LocalizationsBloc()),
+          BlocProvider(create: (_) => authBloc),
           BlocProvider<LoginBloc>(
-            create: (context) => LoginBloc(authBloc),
+            create: (_) => LoginBloc(authBloc),
           ),
           BlocProvider<SignUpBloc>(
-            create: (context) => SignUpBloc(authBloc),
+            create: (_) => SignUpBloc(authBloc),
           ),
-          BlocProvider<NavigationCubit>(create: (context) => NavigationCubit()),
-          BlocProvider<SearchCubit>(create: (context) => SearchCubit()),
-          BlocProvider<TimeRangeCubit>(create: (context) => TimeRangeCubit()),
-          BlocProvider<SurahLessonCubit>(
-              create: (context) => SurahLessonCubit()),
-          BlocProvider<RemindersBloc>(create: (context) => RemindersBloc()),
-          BlocProvider<AppointmentsBloc>(
-              create: (context) => AppointmentsBloc()),
-          BlocProvider<DuaaCubit>(create: (context) => DuaaCubit()),
+          BlocProvider<NavigationCubit>(create: (_) => NavigationCubit()),
+          BlocProvider<SearchCubit>(create: (_) => SearchCubit()),
+          BlocProvider<TimeRangeCubit>(create: (_) => TimeRangeCubit()),
+          BlocProvider<SurahLessonCubit>(create: (_) => SurahLessonCubit()),
+          BlocProvider<RemindersBloc>(create: (_) => RemindersBloc()),
+          BlocProvider<AppointmentsBloc>(create: (_) => AppointmentsBloc()),
+          BlocProvider<DuaaCubit>(create: (_) => DuaaCubit()),
         ],
         child: ScreenUtilInit(
             designSize: const Size(428, 946),

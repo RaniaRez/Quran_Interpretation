@@ -11,9 +11,8 @@ class AppTranslations {
 
   AppTranslations(this.locale);
 
-  static AppTranslations? of(BuildContext context) {
-    return Localizations.of<AppTranslations>(context, AppTranslations);
-  }
+  static AppTranslations? of(BuildContext context) =>
+      Localizations.of<AppTranslations>(context, AppTranslations);
 
   static Future<AppTranslations> load(Locale locale) async {
     AppTranslations translations = AppTranslations(locale);
@@ -24,9 +23,7 @@ class AppTranslations {
     return translations;
   }
 
-  String? text(String key) {
-    return localizedValues![key];
-  }
+  String? text(String key) => localizedValues![key];
 
   get currentLanguage => locale.languageCode;
 }
@@ -35,19 +32,14 @@ class AppTranslationsDelegate extends LocalizationsDelegate<AppTranslations> {
   const AppTranslationsDelegate();
 
   @override
-  bool isSupported(Locale locale) {
-    return supportedLanguages.contains(locale.languageCode);
-  }
+  bool isSupported(Locale locale) =>
+      supportedLanguages.contains(locale.languageCode);
 
   @override
-  Future<AppTranslations> load(Locale locale) {
-    return AppTranslations.load(locale);
-  }
+  Future<AppTranslations> load(Locale locale) => AppTranslations.load(locale);
 
   @override
-  bool shouldReload(LocalizationsDelegate<AppTranslations> old) {
-    return false;
-  }
+  bool shouldReload(LocalizationsDelegate<AppTranslations> old) => false;
 }
 
 class AppLocalizations extends LocalizationsDelegate<AppTranslations> {
@@ -56,17 +48,13 @@ class AppLocalizations extends LocalizationsDelegate<AppTranslations> {
   const AppLocalizations(this.newLocale);
 
   @override
-  bool isSupported(Locale locale) {
-    return supportedLanguages.contains(locale.languageCode);
-  }
+  bool isSupported(Locale locale) =>
+      supportedLanguages.contains(locale.languageCode);
 
   @override
-  Future<AppTranslations> load(Locale locale) async {
-    return await AppTranslations.load(newLocale);
-  }
+  Future<AppTranslations> load(Locale locale) async =>
+      await AppTranslations.load(newLocale);
 
   @override
-  bool shouldReload(LocalizationsDelegate<AppTranslations> old) {
-    return true;
-  }
+  bool shouldReload(LocalizationsDelegate<AppTranslations> old) => true;
 }
