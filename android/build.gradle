@@ -1,0 +1,28 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    subprojects {
+        afterEvaluate { project ->
+            if (project.hasProperty('android')) {
+                project.android {
+                    if (namespace == null) {
+                        namespace project.group
+                    }
+                }
+            }
+        }
+    }
+}
+
+rootProject.layout.buildDirectory = file('../build')
+subprojects {
+    def directory = "${rootProject.layout.buildDirectory.get().asFile}/${project.name}"
+    project.layout.buildDirectory = file(directory)
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.layout.buildDirectory
+}
