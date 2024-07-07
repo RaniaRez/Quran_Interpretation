@@ -1,8 +1,0 @@
-fastapi
-uvicorn
-pydantic
-cohere
-tiktoken
-faiss-cpu
-langchain
-langchain-community
