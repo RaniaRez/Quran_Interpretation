@@ -22,9 +22,8 @@ extension ColorExtension on Color {
 }
 
 extension TranslateExtension on String {
-  String translate(BuildContext context) {
-    return AppTranslations.of(context)!.text(this) ?? this;
-  }
+  String translate(BuildContext context) =>
+      AppTranslations.of(context)!.text(this) ?? this;
 }
 
 extension GetTextTheme on BuildContext {
