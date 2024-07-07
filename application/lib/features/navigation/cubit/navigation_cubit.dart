@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'navigation_state.dart';
 part 'navigation_cubit.freezed.dart';
+part 'navigation_state.dart';
 
 enum AppScreen {
   notification(0, "notification"),
@@ -22,22 +22,13 @@ enum AppScreen {
 }
 
 extension AppScreensExtension on AppScreen {
-  Widget get screen {
-    switch (this) {
-      case AppScreen.home:
-        return const HomeScreen();
-      case AppScreen.notification:
-        return const RemindersScreen();
-      case AppScreen.duaa:
-        return const DuaaScreen();
-      case AppScreen.leaderboard:
-        return const SizedBox.expand();
-      case AppScreen.leaderboard:
-        return const SizedBox.expand();
-      default:
-        return const SizedBox.shrink();
-    }
-  }
+  Widget get screen => switch (this) {
+        AppScreen.home => const HomeScreen(),
+        AppScreen.notification => const RemindersScreen(),
+        AppScreen.duaa => const DuaaScreen(),
+        AppScreen.leaderboard => const SizedBox.expand(),
+        _ => const SizedBox.shrink(),
+      };
 }
 
 class NavigationCubit extends Cubit<NavigationState> {
@@ -51,25 +42,14 @@ class NavigationCubit extends Cubit<NavigationState> {
 
   String title = 'home';
 
-  void change(int index) {
-    switch (index) {
-      case 0:
-        notification();
-        break;
-      case 1:
-        duaa();
-        break;
-      case 2:
-        home();
-        break;
-      case 3:
-        chat();
-        break;
-      case 4:
-        leaderboard();
-        break;
-    }
-  }
+  void change(int index) => switch (index) {
+        0 => notification(),
+        1 => duaa(),
+        2 => home(),
+        3 => chat(),
+        4 => leaderboard(),
+        _ => null,
+      };
 
   void notification() {
     current = AppScreen.notification;

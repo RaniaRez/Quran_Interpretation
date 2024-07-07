@@ -31,7 +31,7 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ButtonStyle(
-        padding: MaterialStateProperty.all(
+        padding: WidgetStateProperty.all(
           EdgeInsets.symmetric(
             horizontal: kSpacingX2,
             vertical: kSpacingX1,
@@ -39,7 +39,7 @@ class CustomButton extends StatelessWidget {
         ),
         elevation: WidgetStateProperty.all(0),
         backgroundColor: disabled
-            ? MaterialStateProperty.all(kGray)
+            ? WidgetStateProperty.all(kGray)
             : WidgetStateProperty.all(backgroundColor),
         minimumSize:
             WidgetStateProperty.all(Size(width ?? context.width, height.sp)),
