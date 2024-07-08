@@ -1,8 +1,8 @@
-import '../../../core/extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/const.dart';
+import '../../../core/extension.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
@@ -31,19 +31,19 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ButtonStyle(
-        padding: MaterialStateProperty.all(
+        padding: WidgetStateProperty.all(
           EdgeInsets.symmetric(
             horizontal: kSpacingX2,
             vertical: kSpacingX1,
           ),
         ),
-        elevation: MaterialStateProperty.all(0),
+        elevation: WidgetStateProperty.all(0),
         backgroundColor: disabled
-            ? MaterialStateProperty.all(kGray)
-            : MaterialStateProperty.all(backgroundColor),
+            ? WidgetStateProperty.all(kGray)
+            : WidgetStateProperty.all(backgroundColor),
         minimumSize:
-            MaterialStateProperty.all(Size(width ?? context.width, height.sp)),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            WidgetStateProperty.all(Size(width ?? context.width, height.sp)),
+        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(kSpacingX1),
           ),

@@ -12,13 +12,9 @@ class MoneyHelper {
     return '$formattedAmount $formattedCurrency';
   }
 
-  static String getFormattedCurrency(String locale) {
-    switch (locale) {
-      case 'ar':
-        return 'دج';
-      // Add more cases for other locales if needed
-      default:
-        return 'Da';
-    }
-  }
+  static String getFormattedCurrency(String locale) => switch (locale) {
+        'ar' => 'دج',
+        // Add more cases for other locales if needed
+        _ => 'Da',
+      };
 }

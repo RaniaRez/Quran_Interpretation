@@ -10,7 +10,6 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 import '../../features/auth/services/auth.repository.dart';
 import '../../models/user/user.dart';
-// import '../../shared/services/helpers/networkinfo.helper.dart';
 
 part 'auth_bloc.freezed.dart';
 part 'auth_event.dart';

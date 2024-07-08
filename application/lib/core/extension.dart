@@ -22,9 +22,8 @@ extension ColorExtension on Color {
 }
 
 extension TranslateExtension on String {
-  String translate(BuildContext context) {
-    return AppTranslations.of(context)!.text(this) ?? this;
-  }
+  String translate(BuildContext context) =>
+      AppTranslations.of(context)!.text(this) ?? this;
 }
 
 extension GetTextTheme on BuildContext {
@@ -161,9 +160,7 @@ extension SnackBarExtension on BuildContext {
 }
 
 extension StringExtension on String {
-  String capitalize() {
-    return '${this[0].toUpperCase()}${substring(1)}';
-  }
+  String capitalize() => '${this[0].toUpperCase()}${substring(1)}';
 
   String get firstLetterCapitalized =>
       '${this[0].toUpperCase()}${substring(1)}';

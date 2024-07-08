@@ -11,13 +11,13 @@ import '../features/navigation/navigation.screen.dart';
 
 class AppRoutes {
   static Map<String, WidgetBuilder> routes = {
-    LoginScreen.routeName: (context) => const LoginScreen(),
-    NavigationScreen.routeName: (context) => const NavigationScreen(),
-    HomeScreen.routeName: (context) => const HomeScreen(),
-    QuranScreen.routeName: (context) => const QuranScreen(),
-    SurahScreen.routeName: (context) => const SurahScreen(),
-    SurahLessonScreen.routeName: (context) => const SurahLessonScreen(),
-    RemindersScreen.routeName: (context) => const RemindersScreen(),
-    AppointmentsScreen.routeName: (context) => const AppointmentsScreen(),
+    LoginScreen.routeName: (_) => const LoginScreen(),
+    NavigationScreen.routeName: (_) => const NavigationScreen(),
+    HomeScreen.routeName: (_) => const HomeScreen(),
+    QuranScreen.routeName: (_) => const QuranScreen(),
+    SurahScreen.routeName: (_) => const SurahScreen(),
+    SurahLessonScreen.routeName: (_) => const SurahLessonScreen(),
+    RemindersScreen.routeName: (_) => const RemindersScreen(),
+    AppointmentsScreen.routeName: (_) => const AppointmentsScreen(),
   };
 }

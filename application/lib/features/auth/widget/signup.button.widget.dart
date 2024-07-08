@@ -19,7 +19,7 @@ class SignUpButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: Theme.of(context).elevatedButtonTheme.style?.copyWith(
-            minimumSize: MaterialStateProperty.all(
+            minimumSize: WidgetStateProperty.all(
               Size(double.infinity, ScreenUtil().setHeight(50)),
             ),
           ),
